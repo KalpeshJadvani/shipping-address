@@ -1,0 +1,40 @@
+{
+  "name": "shipping_address_kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "nodemon app/index.js",
+    "test": "jest",
+    "lint": "eslint app/**.js test/**.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.3.1",
+    "eslint": "^7.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^4.2.5",
+    "jest": "^27.3.1",
+    "prettier": "^2.1.0",
+    "pretty-quick": "^3.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "dependencies": {
+    "core-js": "^3.19.1",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
